@@ -171,7 +171,7 @@ function anoninside($age)
  return function($x,$y) use ($age)
 { if ($x[$age]==$y[$age]) //сортировка массива по значению столбца 'age'
 	{return 0;}
-elseif ($x<$y)
+elseif ($x[$age]<$y[$age])
 	{return 1;}
 else {return -1;}
 }; 
